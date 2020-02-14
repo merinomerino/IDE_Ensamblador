@@ -14,9 +14,13 @@
                     </syncfusion:SplitterPage>
                 </syncfusion:TabSplitterItem.TopPanelItems>
 
-                <syncfusion:TabSplitterItem.BottomPanelItems>
+                <syncfusion:TabSplitterItem.BottomPanelItems >
                     <syncfusion:SplitterPage Name="SplitterPage2" Header="Design" >
-                        <Image Source="pack://application:,,,/Images/TabSplitter.png" Height="300" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Grid x:Name="grid" Background="Yellow">
+                            <Button Content="btn" Click="AddMenu" Width="10" Height="10" RenderTransformOrigin="0.485,0.675" Margin="6,-1,117.5,48"></Button>
+                           
+                        
+                        </Grid>
                     </syncfusion:SplitterPage>
                 </syncfusion:TabSplitterItem.BottomPanelItems>
             </syncfusion:TabSplitterItem >
