@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Libraries;
+using System;
 using System.Windows;
 using System.Windows.Media;
 
@@ -13,6 +14,7 @@ namespace InstructionInput
             //ControlPlaceholder.Children.Add(new InputControl("2,\"Rd = \",1A,\" + \",1A,\" + C\"")
             //ControlPlaceholder.Children.Add(new InputControl("3,\"Rdh: Rdl = Rdh:\",1A,\" + \",9A")
             //ControlPlaceholder.Children.Add(new InputControl("4,\"Rd = \",1A,\" - \",1A")
+            /*
             ControlPlaceholder.Children.Add(new InputControl("5,\"Rd = \",1A,\" - \",9B")
             {
                 OnDone = (instruction) =>
@@ -20,6 +22,16 @@ namespace InstructionInput
                     Console.WriteLine("La instrucción generada fue: " + instruction);
                 }
             });
+            */
+            Parser p = new Parser();
+            ControlPlaceholder.Children.Add(new InputControl(p.Rules[19])
+            { 
+                 OnDone = (instruction) =>
+                 {
+                     Console.WriteLine("La instrucción generada fue: " + instruction);
+                 }
+            });
+            
         }
     }
 }
