@@ -1,0 +1,1245 @@
+[
+  {
+    "id": 1,
+    "name": "ADD",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 1
+  },
+  {
+    "id": 2,
+    "name": "ADC",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 2
+  },
+  {
+    "id": 4,
+    "name": "SUB",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 4
+  },
+  {
+    "id": 5,
+    "name": "SUBI",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 31
+        }
+      },
+      {
+        "name": "K",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 255
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 5
+  },
+  {
+    "id": 6,
+    "name": "SBC",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 6
+  },
+  {
+    "id": 7,
+    "name": "SBCI",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 31
+        }
+      },
+      {
+        "name": "K",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 255
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 7
+  },
+  {
+    "id": 9,
+    "name": "AND",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 9
+  },
+  {
+    "id": 10,
+    "name": "ANDI",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 31
+        }
+      },
+      {
+        "name": "K",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 255
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 10
+  },
+  {
+    "id": 11,
+    "name": "OR",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 11
+  },
+  {
+    "id": 12,
+    "name": "ORI",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 31
+        }
+      },
+      {
+        "name": "K",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 255
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 12
+  },
+  {
+    "id": 13,
+    "name": "EOR",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 13
+  },
+  {
+    "id": 14,
+    "name": "COM",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 14
+  },
+  {
+    "id": 15,
+    "name": "NEG",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 15
+  },
+  {
+    "id": 16,
+    "name": "SBR",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 31
+        }
+      },
+      {
+        "name": "K",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 255
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 16
+  },
+  {
+    "id": 17,
+    "name": "CBR",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 31
+        }
+      },
+      {
+        "name": "K",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 255
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 17
+  },
+  {
+    "id": 18,
+    "name": "INC",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 18
+  },
+  {
+    "id": 19,
+    "name": "DEC",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 19
+  },
+  {
+    "id": 20,
+    "name": "TST",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 20
+  },
+  {
+    "id": 21,
+    "name": "CLR",
+    "asmParams": [],
+    "basicParams": [],
+    "rule": 21
+  },
+  {
+    "id": 22,
+    "name": "SER",
+    "asmParams": [],
+    "basicParams": [],
+    "rule": 22
+  },
+  {
+    "id": 23,
+    "name": "MUL",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 23
+  },
+  {
+    "id": 24,
+    "name": "MULS",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 31
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 24
+  },
+  {
+    "id": 25,
+    "name": "MULSU",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 23
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 23
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 25
+  },
+  {
+    "id": 26,
+    "name": "FMUL",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 23
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 23
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 26
+  },
+  {
+    "id": 27,
+    "name": "FMULS",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 23
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 23
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 27
+  },
+  {
+    "id": 28,
+    "name": "FMULSU",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 23
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 23
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 28
+  },
+  {
+    "id": 29,
+    "name": "RJMP",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -2048,
+          "end": 2047
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 29
+  },
+  {
+    "id": 30,
+    "name": "IJMP",
+    "asmParams": [],
+    "basicParams": [],
+    "rule": 30
+  },
+  {
+    "id": 31,
+    "name": "JMP(1)",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 4194303
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 31
+  },
+  {
+    "id": 32,
+    "name": "RCALL",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -2048,
+          "end": 2047
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 32
+  },
+  {
+    "id": 33,
+    "name": "ICALL",
+    "asmParams": [],
+    "basicParams": [],
+    "rule": 33
+  },
+  {
+    "id": 34,
+    "name": "CALL(1)",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 4194303
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 34
+  },
+  {
+    "id": 35,
+    "name": "RET",
+    "asmParams": [],
+    "basicParams": [],
+    "rule": 35
+  },
+  {
+    "id": 36,
+    "name": "RETI",
+    "asmParams": [],
+    "basicParams": [],
+    "rule": 36
+  },
+  {
+    "id": 37,
+    "name": "CPSE",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 37
+  },
+  {
+    "id": 38,
+    "name": "CP",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 38
+  },
+  {
+    "id": 39,
+    "name": "CPC",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 39
+  },
+  {
+    "id": 40,
+    "name": "CPI",
+    "asmParams": [
+      {
+        "name": "Rd",
+        "constraint": {
+          "type": "range",
+          "start": 16,
+          "end": 31
+        }
+      },
+      {
+        "name": "K",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 255
+        }
+      }
+    ],
+    "basicParams": [],
+    "rule": 40
+  },
+  {
+    "id": 41,
+    "name": "SBRC",
+    "asmParams": [
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "b",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 7
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Bit",
+        "constraint": {
+          "type": "constant",
+          "constant": "0"
+        }
+      }
+    ],
+    "rule": 41
+  },
+  {
+    "id": 42,
+    "name": "SBRS",
+    "asmParams": [
+      {
+        "name": "Rr",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "b",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 7
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Bit",
+        "constraint": {
+          "type": "constant",
+          "constant": "1"
+        }
+      }
+    ],
+    "rule": 41
+  },
+  {
+    "id": 43,
+    "name": "SBIC",
+    "asmParams": [
+      {
+        "name": "A",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "b",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 7
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Bit",
+        "constraint": {
+          "type": "constant",
+          "constant": "0"
+        }
+      }
+    ],
+    "rule": 43
+  },
+  {
+    "id": 44,
+    "name": "SBIS",
+    "asmParams": [
+      {
+        "name": "A",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 31
+        }
+      },
+      {
+        "name": "b",
+        "constraint": {
+          "type": "range",
+          "start": 0,
+          "end": 7
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Bit",
+        "constraint": {
+          "type": "constant",
+          "constant": "1"
+        }
+      }
+    ],
+    "rule": 43
+  },
+  {
+    "id": 47,
+    "name": "BREQ",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -64,
+          "end": 63
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Condition",
+        "constraint": {
+          "type": "constant",
+          "constant": "Equal"
+        }
+      }
+    ],
+    "rule": 47
+  },
+  {
+    "id": 48,
+    "name": "BRNE",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -64,
+          "end": 63
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Condition",
+        "constraint": {
+          "type": "constant",
+          "constant": "Not_Equal"
+        }
+      }
+    ],
+    "rule": 47
+  },
+  {
+    "id": 49,
+    "name": "BRCS",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -64,
+          "end": 63
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Condition",
+        "constraint": {
+          "type": "constant",
+          "constant": "Carry_Set"
+        }
+      }
+    ],
+    "rule": 47
+  },
+  {
+    "id": 50,
+    "name": "BRCC",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -64,
+          "end": 63
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Condition",
+        "constraint": {
+          "type": "constant",
+          "constant": "Carry_Clear"
+        }
+      }
+    ],
+    "rule": 47
+  },
+  {
+    "id": 51,
+    "name": "BRSH",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -64,
+          "end": 63
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Condition",
+        "constraint": {
+          "type": "constant",
+          "constant": "Same_or_Higher"
+        }
+      }
+    ],
+    "rule": 47
+  },
+  {
+    "id": 52,
+    "name": "BRLO",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -64,
+          "end": 63
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Condition",
+        "constraint": {
+          "type": "constant",
+          "constant": "Lower"
+        }
+      }
+    ],
+    "rule": 47
+  },
+  {
+    "id": 53,
+    "name": "BRMI",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -64,
+          "end": 63
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Condition",
+        "constraint": {
+          "type": "constant",
+          "constant": "Minus"
+        }
+      }
+    ],
+    "rule": 47
+  },
+  {
+    "id": 54,
+    "name": "BRPL",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -64,
+          "end": 63
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Condition",
+        "constraint": {
+          "type": "constant",
+          "constant": "Plus"
+        }
+      }
+    ],
+    "rule": 47
+  },
+  {
+    "id": 55,
+    "name": "BRGE",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -64,
+          "end": 63
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Condition",
+        "constraint": {
+          "type": "constant",
+          "constant": "Greater_or_Equal_Signed"
+        }
+      }
+    ],
+    "rule": 47
+  },
+  {
+    "id": 56,
+    "name": "BRLT",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -64,
+          "end": 63
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Condition",
+        "constraint": {
+          "type": "constant",
+          "constant": "Less_Than_Zero_Signed"
+        }
+      }
+    ],
+    "rule": 47
+  },
+  {
+    "id": 57,
+    "name": "BRHS",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -64,
+          "end": 63
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Bit",
+        "constraint": {
+          "type": "constant",
+          "constant": "1"
+        }
+      }
+    ],
+    "rule": 57
+  },
+  {
+    "id": 58,
+    "name": "BRHC",
+    "asmParams": [
+      {
+        "name": "k",
+        "constraint": {
+          "type": "range",
+          "start": -64,
+          "end": 63
+        }
+      }
+    ],
+    "basicParams": [
+      {
+        "name": "Bit",
+        "constraint": {
+          "type": "constant",
+          "constant": "0"
+        }
+      }
+    ],
+    "rule": 57
+  },
+  {
+    "id": 77,
+    "name": "SEC",
+    "asmParams": [],
+    "basicParams": [
+      {
+        "name": "Flag",
+        "constraint": {
+          "type": "constant",
+          "constant": "C"
+        }
+      },
+      {
+        "name": "Bit",
+        "constraint": {
+          "type": "constant",
+          "constant": "1"
+        }
+      }
+    ],
+    "rule": 77
+  },
+  {
+    "id": 78,
+    "name": "CLC",
+    "asmParams": [],
+    "basicParams": [
+      {
+        "name": "Flag",
+        "constraint": {
+          "type": "constant",
+          "constant": "C"
+        }
+      },
+      {
+        "name": "Bit",
+        "constraint": {
+          "type": "constant",
+          "constant": "0"
+        }
+      }
+    ],
+    "rule": 77
+  },
+  {
+    "id": 79,
+    "name": "SEN",
+    "asmParams": [],
+    "basicParams": [
+      {
+        "name": "Flag",
+        "constraint": {
+          "type": "constant",
+          "constant": "N"
+        }
+      },
+      {
+        "name": "Bit",
+        "constraint": {
+          "type": "constant",
+          "constant": "1"
+        }
+      }
+    ],
+    "rule": 77
+  },
+  {
+    "id": 80,
+    "name": "CLN",
+    "asmParams": [],
+    "basicParams": [
+      {
+        "name": "Flag",
+        "constraint": {
+          "type": "constant",
+          "constant": "N"
+        }
+      },
+      {
+        "name": "Bit",
+        "constraint": {
+          "type": "constant",
+          "constant": "0"
+        }
+      }
+    ],
+    "rule": 77
+  }
+
+]

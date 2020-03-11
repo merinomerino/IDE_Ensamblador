@@ -1,9 +1,11 @@
 using System;
 
-public class Parameter
+namespace Libraries
+{
+    public class Parameter
     {
-        public string name {get;}
-        public IConstraintType constraint {get;}
+        public string name { get; }
+        public IConstraintType constraint { get; }
         public Parameter(string name, IConstraintType constraint)
         {
             this.name = name;
@@ -18,7 +20,7 @@ public class Parameter
         {
             this.parameter = parameter;
         }
-        public T Match<T> (
+        public T Match<T>(
             Func<Parameter, T> asmParameter,
             Func<Parameter, T> basicParameter
         )
@@ -34,7 +36,7 @@ public class Parameter
         {
             this.parameter = parameter;
         }
-        public T Match<T> (
+        public T Match<T>(
             Func<Parameter, T> asmParameter,
             Func<Parameter, T> basicParameter
         )
@@ -42,10 +44,11 @@ public class Parameter
             return basicParameter(parameter);
         }
     }
-    public interface IParameterType 
+    public interface IParameterType
     {
-          T Match<T> (
-            Func<Parameter, T> asmParameter,
-            Func<Parameter, T> basicParameter
-        );
+        T Match<T>(
+          Func<Parameter, T> asmParameter,
+          Func<Parameter, T> basicParameter
+      );
     }
+}

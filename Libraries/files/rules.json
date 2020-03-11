@@ -1,0 +1,1482 @@
+[
+  {
+    "id": 1,
+    "description": "Add two Registers without Carry",
+    "group": 1,
+    "subgroup": 1,
+    "flags": [
+      "Z",
+      "C",
+      "N",
+      "V",
+      "H"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "+",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "description": "Add two Registers with Carry",
+    "group": 1,
+    "subgroup": 1,
+    "flags": [
+      "Z",
+      "C",
+      "N",
+      "V",
+      "H"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "+",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "+",
+      "C"
+    ]
+  },
+  {
+    "id": 4,
+    "description": "Subtract two Registers",
+    "group": 1,
+    "subgroup": 2,
+    "flags": [
+      "Z",
+      "C",
+      "N",
+      "V",
+      "H"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "-",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "description": "Subtract Constant from Register",
+    "group": 1,
+    "subgroup": 2,
+    "flags": [
+      "Z",
+      "C",
+      "N",
+      "V",
+      "H"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      "-",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "K",
+          "tableID": {
+            "index": 9,
+            "section": "B"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "description": "Subtract two Registers with Carry",
+    "group": 1,
+    "subgroup": 2,
+    "flags": [
+      "Z",
+      "C",
+      "N",
+      "V",
+      "H"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "-",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "-",
+      "C"
+    ]
+  },
+  {
+    "id": 7,
+    "description": "Subtract Constant from Reg with Carry",
+    "group": 1,
+    "subgroup": 2,
+    "flags": [
+      "Z",
+      "C",
+      "N",
+      "V",
+      "H"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      "-",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "K",
+          "tableID": {
+            "index": 9,
+            "section": "B"
+          }
+        }
+      },
+      "-",
+      "C"
+    ]
+  },
+  {
+    "id": 9,
+    "description": "Logical AND Registers",
+    "group": 2,
+    "subgroup": 1,
+    "flags": [
+      "Z",
+      "N",
+      "V"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "",
+      "And",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "description": "Logical AND Register and Constant",
+    "group": 2,
+    "subgroup": 1,
+    "flags": [
+      "Z",
+      "N",
+      "V"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      "And",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "K",
+          "tableID": {
+            "index": 9,
+            "section": "C"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "description": "Logical OR Registers",
+    "group": 2,
+    "subgroup": 2,
+    "flags": [
+      "Z",
+      "N",
+      "V"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "Or",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "description": "Logical OR Register and Constant",
+    "group": 2,
+    "subgroup": 2,
+    "flags": [
+      "Z",
+      "N",
+      "V"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      "Or",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "K",
+          "tableID": {
+            "index": 9,
+            "section": "C"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "description": "Exclusive OR Registers",
+    "group": 2,
+    "subgroup": 3,
+    "flags": [
+      "Z",
+      "N",
+      "V"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "XOr",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "description": "One’s Complement",
+    "group": 2,
+    "subgroup": 4,
+    "flags": [
+      "Z",
+      "C",
+      "N",
+      "V"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      "Not",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      ")"
+    ]
+  },
+  {
+    "id": 15,
+    "description": "Two’s Complement",
+    "group": 2,
+    "subgroup": 4,
+    "flags": [
+      "Z",
+      "C",
+      "N",
+      "V",
+      "H"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      "Two's",
+      "Complement",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      ")"
+    ]
+  },
+  {
+    "id": 16,
+    "description": "Set Bit(s) in Register",
+    "group": 4,
+    "subgroup": 3,
+    "flags": [
+      "Z",
+      "N",
+      "V"
+    ],
+    "format": [
+      "SetBits",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      ",",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "K",
+          "tableID": {
+            "index": 9,
+            "section": "C"
+          }
+        }
+      },
+      ")"
+    ]
+  },
+  {
+    "id": 17,
+    "description": "Clear Bit(s) in Register",
+    "group": 4,
+    "subgroup": 3,
+    "flags": [
+      "Z",
+      "N",
+      "V"
+    ],
+    "format": [
+      "ClearBits",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      ",",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "K",
+          "tableID": {
+            "index": 9,
+            "section": "C"
+          }
+        }
+      },
+      ")"
+    ]
+  },
+  {
+    "id": 18,
+    "description": "Increment",
+    "group": 1,
+    "subgroup": 4,
+    "flags": [
+      "Z",
+      "N",
+      "V"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      "Inc",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      ")"
+    ]
+  },
+  {
+    "id": 19,
+    "description": "Decrement",
+    "group": 1,
+    "subgroup": 4,
+    "flags": [
+      "Z",
+      "N",
+      "V"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      "Dec",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      ")"
+    ]
+  },
+  {
+    "id": 20,
+    "description": "Test for Zero or Minus",
+    "group": 5,
+    "subgroup": 1,
+    "flags": [
+      "Z",
+      "N",
+      "V"
+    ],
+    "format": [
+      "Rd",
+      "=",
+      "Tst",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      ")"
+    ]
+  },
+  {
+    "id": 21,
+    "description": "Clear Register",
+    "group": 5,
+    "subgroup": 1,
+    "flags": [
+      "Z",
+      "N",
+      "V"
+    ],
+    "format": [
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "=",
+      "0"
+    ]
+  },
+  {
+    "id": 22,
+    "description": "Set Register",
+    "group": 5,
+    "subgroup": 1,
+    "flags": [],
+    "format": [
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "=",
+      "0xFF"
+    ]
+  },
+  {
+    "id": 23,
+    "description": "Multiply Unsigned",
+    "group": 1,
+    "subgroup": 3,
+    "flags": [
+      "Z",
+      "C"
+    ],
+    "format": [
+      "R1:R0",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "x",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "(unsigned",
+      "←",
+      "unsigned",
+      "x",
+      "unsigned)"
+    ]
+  },
+  {
+    "id": 24,
+    "description": "Multiply Signed",
+    "group": 1,
+    "subgroup": 3,
+    "flags": [
+      "Z",
+      "C"
+    ],
+    "format": [
+      "R1:R0",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      "x",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      "",
+      "(signed",
+      "←",
+      "signed",
+      "x",
+      "signed)"
+    ]
+  },
+  {
+    "id": 25,
+    "description": "Multiply Signed with Unsigned",
+    "group": 1,
+    "subgroup": 3,
+    "flags": [
+      "Z",
+      "C"
+    ],
+    "format": [
+      "R1:R0",
+      "=",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      "x",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      "(signed",
+      "←",
+      "signed",
+      "x",
+      "unsigned)"
+    ]
+  },
+  {
+    "id": 26,
+    "description": "Fractional Multiply Unsigned",
+    "group": 1,
+    "subgroup": 3,
+    "flags": [
+      "Z",
+      "C"
+    ],
+    "format": [
+      "R1:R0",
+      "=",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      "x",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      ")",
+      "<<",
+      "1",
+      "(unsigned",
+      "",
+      "←",
+      "unsigned",
+      "x",
+      "unsigned)",
+      "(fractional)"
+    ]
+  },
+  {
+    "id": 27,
+    "description": "Fractional Multiply Signed",
+    "group": 1,
+    "subgroup": 3,
+    "flags": [
+      "Z",
+      "C"
+    ],
+    "format": [
+      "R1:R0",
+      "=",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      "x",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      ")",
+      "<<",
+      "1",
+      "(signed",
+      "",
+      "←",
+      "signed",
+      "x",
+      "signed)",
+      "(fractional)"
+    ]
+  },
+  {
+    "id": 28,
+    "description": "Fractional Multiply Signed with Unsigned",
+    "group": 1,
+    "subgroup": 3,
+    "flags": [
+      "Z",
+      "C"
+    ],
+    "format": [
+      "R1:R0",
+      "=",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      "x",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      ")",
+      "<<",
+      "1",
+      "(signed",
+      "",
+      "←",
+      "signed",
+      "x",
+      "unsigned)",
+      "(fractional)"
+    ]
+  },
+  {
+    "id": 29,
+    "description": "Relative Jump",
+    "group": 3,
+    "subgroup": 1,
+    "flags": [],
+    "format": [
+      "Relative_Jump_to",
+      "",
+      "",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Label",
+          "tableID": {
+            "index": 2,
+            "section": "A"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "description": "Indirect Jump to (Z)",
+    "group": 3,
+    "subgroup": 1,
+    "flags": [],
+    "format": [
+      "Jump_to",
+      "(",
+      "Z",
+      ")"
+    ]
+  },
+  {
+    "id": 31,
+    "description": "Direct Jump",
+    "group": 3,
+    "subgroup": 1,
+    "flags": [],
+    "format": [
+      "Direct_Jump_to",
+      "",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Label",
+          "tableID": {
+            "index": 2,
+            "section": "A"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "description": "Relative Subroutine Call",
+    "group": 3,
+    "subgroup": 4,
+    "flags": [],
+    "format": [
+      "Relative",
+      "_Call_to",
+      "",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Label",
+          "tableID": {
+            "index": 2,
+            "section": "A"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "description": "Indirect Call to (Z)",
+    "group": 3,
+    "subgroup": 4,
+    "flags": [],
+    "format": [
+      "Call_to",
+      "(",
+      "Z",
+      ")"
+    ]
+  },
+  {
+    "id": 34,
+    "description": "Direct Subroutine Call",
+    "group": 3,
+    "subgroup": 4,
+    "flags": [],
+    "format": [
+      "Direct",
+      "_Call",
+      "",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Label",
+          "tableID": {
+            "index": 2,
+            "section": "A"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "description": "Subroutine Return",
+    "group": 3,
+    "subgroup": 4,
+    "flags": [],
+    "format": [
+      "Return"
+    ]
+  },
+  {
+    "id": 36,
+    "description": "Interrupt Return",
+    "group": 3,
+    "subgroup": 4,
+    "flags": [
+      "I"
+    ],
+    "format": [
+      "Interrupt_Return"
+    ]
+  },
+  {
+    "id": 37,
+    "description": "Compare, Skip if Equal if (Rd = Rr)",
+    "group": 3,
+    "subgroup": 5,
+    "flags": [],
+    "format": [
+      "Skip",
+      "Line,",
+      "if",
+      "(Rd",
+      "=",
+      "Rr)"
+    ]
+  },
+  {
+    "id": 38,
+    "description": "Compare",
+    "group": 3,
+    "subgroup": 5,
+    "flags": [
+      "Z",
+      " ",
+      "V",
+      "C",
+      "H"
+    ],
+    "format": [
+      "Compare",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "",
+      ",",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      ")"
+    ]
+  },
+  {
+    "id": 39,
+    "description": "Compare with Carry",
+    "group": 3,
+    "subgroup": 5,
+    "flags": [
+      "Z",
+      " ",
+      "V",
+      "C",
+      "H"
+    ],
+    "format": [
+      "Compare",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      ",",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "Rr",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      "-",
+      "C",
+      ")"
+    ]
+  },
+  {
+    "id": 40,
+    "description": "Compare Register with Immediate",
+    "group": 3,
+    "subgroup": 5,
+    "flags": [
+      "Z",
+      " ",
+      "V",
+      "C",
+      "H"
+    ],
+    "format": [
+      "Compare",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      ",",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 1,
+          "name": "K",
+          "tableID": {
+            "index": 9,
+            "section": "B"
+          }
+        }
+      },
+      ")"
+    ]
+  },
+  {
+    "id": 41,
+    "description": "Skip if Bit in Register Cleared if (Rr(b)=0)",
+    "group": 3,
+    "subgroup": 3,
+    "flags": [],
+    "format": [
+      "if",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Rd",
+          "tableID": {
+            "index": 1,
+            "section": "B"
+          }
+        }
+      },
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "b",
+          "tableID": {
+            "index": 5,
+            "section": "A"
+          }
+        }
+      },
+      ")",
+      "=",
+      {
+        "placeHolder": {
+          "type": "basic",
+          "index": 0,
+          "name": "Bit",
+          "tableID": {
+            "index": 1,
+            "section": "A"
+          }
+        }
+      },
+      ")",
+      "Skipline"
+    ]
+  },
+  {
+    "id": 43,
+    "description": "Skip if Bit in I/O Register Cleared if (I/O(A,b)=1)",
+    "group": 3,
+    "subgroup": 3,
+    "flags": [],
+    "format": [
+      "if",
+      "(",
+      "I",
+      "/",
+      "O",
+      "(",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "A",
+          "tableID": {
+            "index": 8,
+            "section": "B"
+          }
+        }
+      },
+      ",",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "b",
+          "tableID": {
+            "index": 5,
+            "section": "A"
+          }
+        }
+      },
+      ")",
+      "=",
+      {
+        "placeHolder": {
+          "type": "basic",
+          "index": 0,
+          "name": "Bit",
+          "tableID": {
+            "index": 6,
+            "section": "A"
+          }
+        }
+      },
+      ")",
+      "Skipline"
+    ]
+  },
+  {
+    "id": 47,
+    "description": "Branch if Equal if (Z = 1) then",
+    "group": 3,
+    "subgroup": 2,
+    "flags": [],
+    "format": [
+      "if",
+      "",
+      "(",
+      {
+        "placeHolder": {
+          "type": "basic",
+          "index": 0,
+          "name": "Condition",
+          "tableID": {
+            "index": 3,
+            "section": "A"
+          }
+        }
+      },
+      ")",
+      "then",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Label",
+          "tableID": {
+            "index": 2,
+            "section": "A"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "description": "Branch if Half Carry Flag Set if (H = 1) then",
+    "group": 3,
+    "subgroup": 2,
+    "flags": [],
+    "format": [
+      "if",
+      "(",
+      {
+        "placeHolder": {
+          "type": "basic",
+          "index": 0,
+          "name": "Bit",
+          "tableID": {
+            "index": 4,
+            "section": "A"
+          }
+        }
+      },
+      "=",
+      {
+        "placeHolder": {
+          "type": "basic",
+          "index": 0,
+          "name": "Bit",
+          "tableID": {
+            "index": 4,
+            "section": "A"
+          }
+        }
+      },
+      ")",
+      "then",
+      {
+        "placeHolder": {
+          "type": "asm",
+          "index": 0,
+          "name": "Label",
+          "tableID": {
+            "index": 6,
+            "section": "B"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "description": "Set Carry",
+    "group": 3,
+    "subgroup": 2,
+    "flags": [],
+    "format": [
+      {
+        "placeHolder": {
+          "type": "basic",
+          "index": 0,
+          "name": "Flag",
+          "tableID": {
+            "index": 4,
+            "section": "A"
+          }
+        }
+      },
+      "=",
+      {
+        "placeHolder": {
+          "type": "basic",
+          "index": 0,
+          "name": "Bit",
+          "tableID": {
+            "index": 5,
+            "section": "A"
+          }
+        }
+      }
+    ]
+  }
+]

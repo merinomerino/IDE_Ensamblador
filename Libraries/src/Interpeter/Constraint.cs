@@ -1,10 +1,12 @@
 using System;
 
-public class Sequence
+namespace Libraries
+{
+    public class Sequence
     {
-        public int start {get;}
-        public int end {get;}
-        public int step {get;}
+        public int start { get; }
+        public int end { get; }
+        public int step { get; }
         public Sequence(int start, int end, int step)
         {
             this.start = start;
@@ -12,10 +14,10 @@ public class Sequence
             this.step = step;
         }
     }
-    public class Range 
+    public class Range
     {
-        public int start {get;}
-        public int end {get;}
+        public int start { get; }
+        public int end { get; }
         public Range(int start, int end)
         {
             this.start = start;
@@ -24,7 +26,7 @@ public class Sequence
     }
     public class ConstantConstraint : IConstraintType
     {
-        public override int order {get;}
+        public override int order { get; }
         private readonly string constant;
         public string Constant { get { return constant; } }
         public ConstantConstraint(string constant)
@@ -32,7 +34,7 @@ public class Sequence
             this.order = 3;
             this.constant = constant;
         }
-        public override T Match<T> (
+        public override T Match<T>(
             Func<string, T> constant,
             Func<Sequence, T> sequence,
             Func<Range, T> range
@@ -43,7 +45,7 @@ public class Sequence
     }
     public class SequenceConstraint : IConstraintType
     {
-        public override int order {get;}
+        public override int order { get; }
         private readonly Sequence sequence;
         public Sequence Sequence { get { return sequence; } }
         public SequenceConstraint(Sequence sequence)
@@ -51,7 +53,7 @@ public class Sequence
             this.order = 2;
             this.sequence = sequence;
         }
-        public override T Match<T> (
+        public override T Match<T>(
             Func<string, T> constant,
             Func<Sequence, T> sequence,
             Func<Range, T> range
@@ -62,7 +64,7 @@ public class Sequence
     }
     public class RangeConstraint : IConstraintType
     {
-        public override int order {get;}
+        public override int order { get; }
         private readonly Range range;
         public Range Range { get { return range; } }
         public RangeConstraint(Range range)
@@ -70,7 +72,7 @@ public class Sequence
             this.order = 1;
             this.range = range;
         }
-        public override T Match<T> (
+        public override T Match<T>(
             Func<string, T> constant,
             Func<Sequence, T> sequence,
             Func<Range, T> range
@@ -82,17 +84,18 @@ public class Sequence
     }
     public abstract class IConstraintType : IComparable<IConstraintType>
     {
-        public abstract int order { get;}
+        public abstract int order { get; }
         public int CompareTo(IConstraintType other)
         {
             if (other == null)
                 return 1;
-            else 
+            else
                 return order.CompareTo(other.order);
         }
-        public abstract T Match<T> (
+        public abstract T Match<T>(
             Func<string, T> constant,
             Func<Sequence, T> sequence,
             Func<Range, T> range
         );
     }
+}
